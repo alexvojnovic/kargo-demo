@@ -1,0 +1,98 @@
+
+      - ARTIFACT: "ms-guest-entitlements"
+        DESTINATION: [usj-azure, eastus-azure]
+
+      - ARTIFACT: "proc-guest-entitlements-media"
+        DESTINATION: [usj-azure, eastus-azure]
+
+      - ARTIFACT: "proc-guest-entitlements-ticket"
+        DESTINATION: [usj-azure, eastus-azure]
+        
+      - ARTIFACT: "proc-guest-entitlements-product"
+        DESTINATION: [usj-azure, eastus-azure]
+
+      - ARTIFACT: "proc-guest-entitlements-change"
+        DESTINATION: [usj-azure, eastus-azure]
+
+      - ARTIFACT: "proc-guest-entitlements-account"
+        DESTINATION: [usj-azure, eastus-azure]
+
+      - ARTIFACT: "proc-guest-entitlements-event"
+        DESTINATION: [usj-azure, eastus-azure]
+
+ms-service-name-1
+├── common
+│   ├── dev.yml
+│   ├── qa.yml
+│   ├── stg.yml
+│   └── prod.yml
+├── {datacenter-1}
+│   ├── ms-service-api
+│   │   ├── dev.yml
+│   │   ├── qa.yml
+│   │   ├── stg.yml
+│   │   └── prod.yml
+│   ├── {proc-1}
+│   │   ├── dev.yml
+│   │   ├── qa.yml
+│   │   ├── stg.yml
+│   │   └── prod.yml
+│   └── {proc-2}
+│       ├── dev.yml
+│       ├── qa.yml
+│       ├── stg.yml
+│       └── prod.yml
+└── {datacenter-2}
+    ├── {ms-service-api}
+    │   ├── dev.yml
+    │   ├── qa.yml
+    │   ├── stg.yml
+    │   └── prod.yml
+    ├── {proc-1}
+    │   ├── dev.yml
+    │   ├── qa.yml
+    │   ├── stg.yml
+    │   └── prod.yml
+    └── {proc-2}
+        ├── dev.yml
+        ├── qa.yml
+        ├── stg.yml
+        └── prod.yml
+ms-service-name-2
+├── common
+│   ├── dev.yml
+│   ├── qa.yml
+│   ├── stg.yml
+│   └── prod.yml
+├── {datacenter-1}
+│   ├── ms-service-api
+│   │   ├── dev.yml
+│   │   ├── qa.yml
+│   │   ├── stg.yml
+│   │   └── prod.yml
+│   ├── {proc-1}
+│   │   ├── dev.yml
+│   │   ├── qa.yml
+│   │   ├── stg.yml
+│   │   └── prod.yml
+│   └── {proc-2}
+│       ├── dev.yml
+│       ├── qa.yml
+│       ├── stg.yml
+│       └── prod.yml
+└── {datacenter-2}
+    ├── {ms-service-api}
+    │   ├── dev.yml
+    │   ├── qa.yml
+    │   ├── stg.yml
+    │   └── prod.yml
+    ├── {proc-1}
+    │   ├── dev.yml
+    │   ├── qa.yml
+    │   ├── stg.yml
+    │   └── prod.yml
+    └── {proc-2}
+        ├── dev.yml
+        ├── qa.yml
+        ├── stg.yml
+        └── prod.yml

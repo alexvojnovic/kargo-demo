@@ -1,0 +1,86 @@
+kustomize
+├── guest-entitlements
+│    ├── deploy-config.json
+│    ├── common
+│    │   ├── kargo
+│    │   │     ├── project.yaml <-- Tied to namespace
+│    │   │     ├── warehouse.yaml <-- Groups the microservice + processors by filtering out the artifact names
+│    │   │     ├── promotion-template.yaml
+│    │   │     └── stages.yaml 
+│    │   ├── dev.yml
+│    │   ├── qa.yml
+│    │   ├── stg.yml
+│    │   └── prod.yml
+│    ├── useast-azure
+│    │   ├── ms-guest-entitlements
+│    │   │   ├── dev.yml
+│    │   │   ├── qa.yml
+│    │   │   ├── stg.yml
+│    │   │   └── prod.yml
+│    │   ├── proc-guest-entitlements-media
+│    │   │   ├── dev.yml
+│    │   │   ├── qa.yml
+│    │   │   ├── stg.yml
+│    │   │   └── prod.yml
+│    │   ├── proc-guest-entitlements-ticket
+│    │   │   ├── dev.yml
+│    │   │   ├── qa.yml
+│    │   │   ├── stg.yml
+│    │   │   └── prod.yml
+│    │   ├── proc-guest-entitlements-product
+│    │   │   ├── dev.yml
+│    │   │   ├── qa.yml
+│    │   │   ├── stg.yml
+│    │   │   └── prod.yml
+│    │   ├── proc-guest-entitlements-change
+│    │   │   ├── dev.yml
+│    │   │   ├── qa.yml
+│    │   │   ├── stg.yml
+│    │   │   └── prod.yml
+│    │   ├── proc-guest-entitlements-account
+│    │   │   ├── dev.yml
+│    │   │   ├── qa.yml
+│    │   │   ├── stg.yml
+│    │   │   └── prod.yml
+│    │   └── proc-guest-entitlements-event
+│    │       ├── dev.yml
+│    │       ├── qa.yml
+│    │       ├── stg.yml
+│    │       └── prod.yml
+│    │
+│    └── usj-azure
+│        ├── ms-guest-entitlements
+│        │   ├── dev.yml
+│        │   ├── qa.yml
+│        │   ├── stg.yml
+│        │   └── prod.yml
+│        ├── proc-guest-entitlements-media
+│        │   ├── dev.yml
+│        │   ├── qa.yml
+│        │   ├── stg.yml
+│        │   └── prod.yml
+│        ├── proc-guest-entitlements-ticket
+│        │   ├── dev.yml
+│        │   ├── qa.yml
+│        │   ├── stg.yml
+│        │   └── prod.yml
+│        ├── proc-guest-entitlements-product
+│        │   ├── dev.yml
+│        │   ├── qa.yml
+│        │   ├── stg.yml
+│        │   └── prod.yml
+│        ├── proc-guest-entitlements-change
+│        │   ├── dev.yml
+│        │   ├── qa.yml
+│        │   ├── stg.yml
+│        │   └── prod.yml
+│        ├── proc-guest-entitlements-account
+│        │   ├── dev.yml
+│        │   ├── qa.yml
+│        │   ├── stg.yml
+│        │   └── prod.yml
+│        └── proc-guest-entitlements-event
+│            ├── dev.yml
+│            ├── qa.yml
+│            ├── stg.yml
+│            └── prod.yml

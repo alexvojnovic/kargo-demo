@@ -1,0 +1,21 @@
+---
+apiVersion: kargo.akuity.io/v1alpha1
+kind: Warehouse
+metadata:
+  name: guest-entitlements
+spec:
+  interval: 1m
+  images:
+  - name: ms
+    repoURL: registry.internal/myorg/ms-guest-entitlements
+    tags:
+      allow: '^[a-f0-9]{6}$'
+
+  - name: processors
+    repoURL: registry.internal/myorg/
+    include:
+      - "^proc-guest-entitlements-.*$"
+    tags:
+      allow: '^[a-f0-9]{6}$'
+      semver:
+        mode: none
